@@ -134,6 +134,17 @@ iframe {
   width: 100%;
 }
 
+.expanding-div {
+  background-color: #f0f0f0;
+  padding: 10px;
+  border: 1px solid #ccc;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+
+
 .slick-slide:focus,
 button:focus,
 a:focus,

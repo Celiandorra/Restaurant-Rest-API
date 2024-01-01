@@ -1,0 +1,25 @@
+CREATE TABLE restaurants (
+  restaurant_id SERIAL PRIMARY KEY, -- Primary key with auto-incrementing serial
+  restaurant_name VARCHAR(255) NOT NULL,
+  restaurant_address VARCHAR(255) NOT NULL,
+  restaurant_rating INT CHECK (restaurant_rating >= 1 AND restaurant_rating <= 5),
+  dishes_type VARCHAR(50) NOT NULL,
+  vegetarian_friendly VARCHAR(10) NOT NULL,
+  price_range INT CHECK (price_range >= 5 AND price_range <= 100),
+  image_url VARCHAR(255)
+);
+
+
+
+INSERT INTO restaurants (restaurant_name, restaurant_address, restaurant_rating, dishes_type, vegetarian_friendly, price_range, image_url)
+VALUES
+  ('Tasty Tacos', '123 Main St, City1, Country1', 4, 'Mexican', 'Yes', 20, 'https://example.com/tasty_tacos.jpg'),
+  ('Pizza Palace', '456 Oak St, City2, Country2', 3, 'Italian', 'No', 15, 'https://example.com/pizza_palace.jpg'),
+  ('Sushi Heaven', '789 Pine St, City3, Country3', 5, 'Japanese', 'Yes', 30, 'https://example.com/sushi_heaven.jpg'),
+  ('Burger Bistro', '101 Maple St, City4, Country4', 4, 'American', 'Yes', 25, 'https://example.com/burger_bistro.jpg'),
+  ('Falafel Fusion', '202 Birch St, City5, Country5', 4, 'Lebanese', 'Yes', 18, 'https://example.com/falafel_fusion.jpg'),
+  ('Pasta Paradise', '303 Cedar St, City6, Country6', 4, 'Italian', 'Yes', 22, 'https://example.com/pasta_paradise.jpg'),
+  ('Curry Corner', '404 Elm St, City7, Country7', 4, 'Indian', 'Yes', 28, 'https://example.com/curry_corner.jpg'),
+  ('Steakhouse Supreme', '505 Walnut St, City8, Country8', 5, 'Steakhouse', 'No', 40, 'https://example.com/steakhouse_supreme.jpg'),
+  ('Veggie Delight', '606 Redwood St, City9, Country9', 4, 'Vegetarian', 'Yes', 20, 'https://example.com/veggie_delight.jpg'),
+  ('Fish Feast', '707 Fir St, City10, Country10', 4, 'Seafood', 'No', 35, 'https://example.com/fish_feast.jpg');
