@@ -3,10 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <meta http-equiv="x-ua-compatible" content="ie=edge" />
-    <title>
-      FoodFindr - Find Your Food!
-    </title>
-
+    <title>FoodFindr - Find Your Food!</title>
 
     <!-- Mobile Specific Metas -->
     <meta
@@ -15,81 +12,7 @@
     />
 
     <!-- Favicons - Place favicon.ico in the root directory -->
-    <link
-      rel="apple-touch-icon"
-      sizes="57x57"
-      href="assets/img/favicons/apple-icon-57x57.png"
-    />
-    <link
-      rel="apple-touch-icon"
-      sizes="60x60"
-      href="assets/img/favicons/apple-icon-60x60.png"
-    />
-    <link
-      rel="apple-touch-icon"
-      sizes="72x72"
-      href="assets/img/favicons/apple-icon-72x72.png"
-    />
-    <link
-      rel="apple-touch-icon"
-      sizes="76x76"
-      href="assets/img/favicons/apple-icon-76x76.png"
-    />
-    <link
-      rel="apple-touch-icon"
-      sizes="114x114"
-      href="assets/img/favicons/apple-icon-114x114.png"
-    />
-    <link
-      rel="apple-touch-icon"
-      sizes="120x120"
-      href="assets/img/favicons/apple-icon-120x120.png"
-    />
-    <link
-      rel="apple-touch-icon"
-      sizes="144x144"
-      href="assets/img/favicons/apple-icon-144x144.png"
-    />
-    <link
-      rel="apple-touch-icon"
-      sizes="152x152"
-      href="assets/img/favicons/apple-icon-152x152.png"
-    />
-    <link
-      rel="apple-touch-icon"
-      sizes="180x180"
-      href="assets/img/favicons/apple-icon-180x180.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="192x192"
-      href="assets/img/favicons/android-icon-192x192.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="32x32"
-      href="assets/img/favicons/favicon-32x32.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="96x96"
-      href="assets/img/favicons/favicon-96x96.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="16x16"
-      href="assets/img/favicons/favicon-16x16.png"
-    />
-    <link rel="manifest" href="assets/img/favicons/manifest.json" />
-    <meta name="msapplication-TileColor" content="#ffffff" />
-    <meta
-      name="msapplication-TileImage"
-      content="assets/img/favicons/ms-icon-144x144.png"
-    />
+
     <meta name="theme-color" content="#ffffff" />
 
     <!--==============================
@@ -117,10 +40,9 @@
     <link rel="stylesheet" href="assets/css/style.css" />
     <!-- App Link  -->
     <script defer src="app.js"></script>
-
   </head>
 
-  <body>
+  <body   onload="showAllOptions()">
     <!--[if lte IE 9]>
       <p class="browserupgrade">
         You are using an <strong>outdated</strong> browser. Please
@@ -153,7 +75,7 @@
     <!--==============================
 Product Lightbox   MEKLA PREVIEW O SOUM
 ==============================-->
-     <!-- <div id="QuickView" class="white-popup mfp-hide">
+    <!-- <div id="QuickView" class="white-popup mfp-hide">
         <div class="container bg-white rounded-10">
             <div class="row gx-60">
                 <div class="col-lg-6">
@@ -200,7 +122,7 @@ Product Lightbox   MEKLA PREVIEW O SOUM
     <!--==============================
     Sidemenu
 ============================== -->
-     <!-- <div class="sidemenu-wrapper sidemenu-cart d-none d-lg-block">
+    <!-- <div class="sidemenu-wrapper sidemenu-cart d-none d-lg-block">
       <div class="sidemenu-content">
         <button class="closeButton sideMenuCls">
           <i class="far fa-times"></i>
@@ -317,16 +239,7 @@ Product Lightbox   MEKLA PREVIEW O SOUM
         </div>
       </div>
     </div> 
- --> 
-
-
-
-
-
-
-
-
-
+ -->
 
     <div class="popup-search-box d-none d-lg-block">
       <button class="searchClose"><i class="fal fa-times"></i></button>
@@ -351,11 +264,6 @@ Product Lightbox   MEKLA PREVIEW O SOUM
           <ul>
             <li class="menu-item-has-children">
               <a href="home-organic-farm.html">Home</a>
-              <!-- <ul class="sub-menu">
-                <li><a href="home-organic-farm.html">Organic Farm</a></li>
-                <li><a href="home-organic-food.html">Organic Food</a></li>
-                <li><a href="home-mega-shop.html">Mega Shop</a></li>
-              </ul> -->
             </li>
             <li><a href="about.html">About Us</a></li>
             <li class="menu-item-has-children">
@@ -365,7 +273,7 @@ Product Lightbox   MEKLA PREVIEW O SOUM
                 <li><a href="service-details.html">Service Details</a></li>
               </ul>
             </li>
-           
+          </ul>
         </div>
       </div>
     </div>
@@ -379,9 +287,7 @@ Product Lightbox   MEKLA PREVIEW O SOUM
           <div
             class="row justify-content-center justify-content-lg-between align-items-center gy-2"
           >
-            <div class="col-auto d-none d-lg-block">
-            
-            </div>
+            <div class="col-auto d-none d-lg-block"></div>
             <div class="col-auto">
               <div class="header-links">
                 <ul>
@@ -415,9 +321,6 @@ Product Lightbox   MEKLA PREVIEW O SOUM
         </div>
       </div>
       <div class="sticky-wrapper">
-
-
-
         <!-- Main Menu Area -->
         <div class="menu-area">
           <div class="container">
@@ -425,7 +328,11 @@ Product Lightbox   MEKLA PREVIEW O SOUM
               <div class="col-auto">
                 <div class="header-logo">
                   <a href="index.html"
-                    ><img src="assets/img/nlogo5.png" alt="fruitFindr" width="250" height="150"
+                    ><img
+                      src="assets/img/nlogo5.png"
+                      alt="fruitFindr"
+                      width="250"
+                      height="150"
                   /></a>
                 </div>
               </div>
@@ -717,8 +624,10 @@ Category Area
       <div class="container">
         <div class="title-area text-center">
           <span class="sub-title"
-            ><img src="assets/img/theme-img/title_icon.svg" alt="Icon" />Restaurants 
-            Category</span
+            ><img
+              src="assets/img/theme-img/title_icon.svg"
+              alt="Icon"
+            />Restaurants Category</span
           >
           <h2 class="sec-title">Get Started</h2>
         </div>
@@ -739,9 +648,9 @@ Category Area
                 >
                   <img src="assets/img/icon/category_card_1.svg" alt="Image" />
                 </div>
-                <p class="box-subtitle">Product (08)</p>
+                <p class="box-subtitle">Resto (08)</p>
                 <h3 class="box-title">
-                  <a href="shop.html">Fast Food</a>
+                  <a href="mediterranean.html">Mediterranean Food</a>
                 </h3>
               </div>
             </div>
@@ -758,9 +667,9 @@ Category Area
                 >
                   <img src="assets/img/icon/category_card_2.svg" alt="Image" />
                 </div>
-                <p class="box-subtitle">Product (05)</p>
+                <p class="box-subtitle">Resto (05)</p>
                 <h3 class="box-title">
-                  <a href="shop.html">Tunisian Food</a>
+                  <a href="tunisian.html">Tunisian Food</a>
                 </h3>
               </div>
             </div>
@@ -777,9 +686,9 @@ Category Area
                 >
                   <img src="assets/img/icon/category_card_3.svg" alt="Image" />
                 </div>
-                <p class="box-subtitle">Product (04)</p>
+                <p class="box-subtitle">Resto (04)</p>
                 <h3 class="box-title">
-                  <a href="shop.html">Asian Food</a>
+                  <a href="asian.html">Asian Food</a>
                 </h3>
               </div>
             </div>
@@ -796,8 +705,8 @@ Category Area
                 >
                   <img src="assets/img/icon/category_card_4.svg" alt="Image" />
                 </div>
-                <p class="box-subtitle">Product (07)</p>
-                <h3 class="box-title"><a href="shop.html">Italian Food</a></h3>
+                <p class="box-subtitle">Resto (07)</p>
+                <h3 class="box-title"><a href="american.html">American Food</a></h3>
               </div>
             </div>
 
@@ -813,8 +722,10 @@ Category Area
                 >
                   <img src="assets/img/icon/category_card_5.svg" alt="Image" />
                 </div>
-                <p class="box-subtitle">Product (10)</p>
-                <h3 class="box-title"><a href="shop.html">Palestinian Food</a></h3>
+                <p class="box-subtitle">Resto (10)</p>
+                <h3 class="box-title">
+                  <a href="palestinian.html">Palestinian Food</a>
+                </h3>
               </div>
             </div>
           </div>
@@ -828,10 +739,10 @@ About Area
       <div class="container">
         <div class="row align-items-center">
           <div class="col-xl-6 mb-30 mb-xl-0">
-            <br>
-            <br>
-            <br>
-            <br>
+            <br />
+            <br />
+            <br />
+            <br />
             <div class="img-box1">
               <div class="img1">
                 <img src="assets/img/p3.jpg" alt="About" />
@@ -858,26 +769,25 @@ About Area
                 >
                 <h2 class="sec-title">Eating Right For Your Lifestyle</h2>
                 <p class="sec-text">
-                  Browse a variety of restaurants and fast food options, get familiar with your likings and choose your favorite food from the comfort of your home.
-                 
+                  Browse a variety of restaurants and fast food options, get
+                  familiar with your likings and choose your favorite food from
+                  the comfort of your home.
                 </p>
               </div>
 
-                <a href="about.html" class="th-btn"
-                  >Discover More<i class="fas fa-chevrons-right ms-2"></i
-                ></a>
-              </div>
+              <a href="about.html" class="th-btn"
+                >Discover More<i class="fas fa-chevrons-right ms-2"></i
+              ></a>
             </div>
           </div>
         </div>
       </div>
     </div>
-   
-    <!--==============================
-Product Area
-==============================-->
+
+    <!-- PRODUCT AREA  -->
+
     <section class="bg-smoke2 space" id="shop-sec" class="expanding-div">
-      <div class="shape-mockup" data-top="0" data-left="0" >
+      <div class="shape-mockup" data-top="0" data-left="0">
         <img src="assets/img/shape/vector_shape_1.png" alt="shape" />
       </div>
       <div class="shape-mockup" data-bottom="0" data-right="0">
@@ -886,38 +796,46 @@ Product Area
       <div class="container text-center">
         <div class="title-area text-center">
           <span class="sub-title"
-            ><img src="assets/img/theme-img/title_icon.svg" alt="Icon" />Browse Restaurants</span
+            ><img src="assets/img/theme-img/title_icon.svg" alt="Icon" />Browse
+            Restaurants</span
           >
           <h2 class="sec-title">Get started with this selection!</h2>
         </div>
         <div class="filter-menu indicator-active filter-menu-active">
-          <button data-filter="*" class="th-btn tab-btn active" type="button">
+          <button data-filter="*" class="th-btn tab-btn active" type="button" onclick="showAllOptions()">
             ALL
           </button>
-          <button data-filter=".cat1" class="th-btn tab-btn" type="button">
+          <button
+            data-filter=".cat1"  class="th-btn tab-btn" type="button" >
             Vegan
           </button>
-          <button data-filter=".cat2" class="th-btn tab-btn" type="button">
-            Fast Food
+          <button data-filter=".cat2" class="th-btn tab-btn" type="button" onclick="showHalalOptions()">
+            Halal
           </button>
-          <button data-filter=".cat3" class="th-btn tab-btn" type="button">
+          <button data-filter=".cat3" class="th-btn tab-btn" type="button" onclick="showVegetarianOptions()">
             Vegetarian
           </button>
-          <button data-filter=".cat4" class="th-btn tab-btn" type="button">
-            Traditional
+          <button data-filter=".cat4" class="th-btn tab-btn" type="button" onclick="showGlutenFreeOptions()">
+            Gluten Free
           </button>
-          <button data-filter=".cat5" class="th-btn tab-btn" type="button">
-            Asian
+          <button data-filter=".cat5" class="th-btn tab-btn" type="button"  onclick="showLactoseFreeOptions()">
+            Lactose Free
+          </button>
+          <button data-filter=".cat5" class="th-btn tab-btn" type="button"  onclick="showSeafoodOptions()">
+            Seafood
           </button>
         </div>
-        <div class="expanding-div" id="RestaurantWrapper" style="height: fit-content !important;">
-
-
-        </div>
+        <div
+          class="expanding-div"
+          id="RestaurantWrapper"
+          style="
+            height: fit-content !important;
+            justify-content: start;
+            
+          "
+        ></div>
       </div>
     </section>
-    
-
 
     <!--==============================
 Counter Area  
@@ -966,9 +884,7 @@ Counter Area
               <img src="assets/img/icon/counter_card_4.svg" alt="Icon" />
             </div>
             <div class="media-body">
-              <h2 class="box-number">
-                <span class="counter-number">3</span>+
-              </h2>
+              <h2 class="box-number"><span class="counter-number">3</span>+</h2>
               <p class="box-text">Awards Winning</p>
             </div>
           </div>
@@ -976,8 +892,6 @@ Counter Area
         </div>
       </div>
     </div>
-   
-
 
     <!--==============================
 Team Area  
@@ -1032,11 +946,9 @@ Team Area
               </div>
             </div>
           </div>
-          </div>
         </div>
       </div>
     </section>
-
 
     <!--==============================
 Testimonial Area  
@@ -1069,20 +981,16 @@ Testimonial Area
                 <div class="swiper-slide">
                   <div class="testi-card">
                     <p class="testi-card_text">
-                      “Easy to use! Helps me stay on path with my diet with user friendly filters.”
+                      “Easy to use! Helps me stay on path with my diet with user
+                      friendly filters.”
                     </p>
                     <div class="testi-card_profile">
                       <div class="testi-card_avater">
-                        <img
-                          src="assets/img/floof.png"
-                          alt="Avater"
-                        />
+                        <img src="assets/img/floof.png" alt="Avater" />
                       </div>
                       <div class="testi-card_content">
                         <h3 class="testi-card_name">Lucky Floof</h3>
-                        <span class="testi-card_desig"
-                          >Our Site User</span
-                        >
+                        <span class="testi-card_desig">Our Site User</span>
                       </div>
                     </div>
                   </div>
@@ -1090,20 +998,16 @@ Testimonial Area
                 <div class="swiper-slide">
                   <div class="testi-card">
                     <p class="testi-card_text">
-                      “Wide restaurants database, very helpful for picky eaters ”
+                      “Wide restaurants database, very helpful for picky eaters
+                      ”
                     </p>
                     <div class="testi-card_profile">
                       <div class="testi-card_avater">
-                        <img
-                          src="assets/img/link.png"
-                          alt="Avater"
-                        />
+                        <img src="assets/img/link.png" alt="Avater" />
                       </div>
                       <div class="testi-card_content">
                         <h3 class="testi-card_name">Link Hyrulian</h3>
-                        <span class="testi-card_desig"
-                          >Our Site User
-                          </span>
+                        <span class="testi-card_desig">Our Site User </span>
                       </div>
                     </div>
                   </div>
@@ -1127,15 +1031,12 @@ Testimonial Area
           </div>
         </div>
       </div>
-      <br>
+      <br />
     </section>
-
-
 
     <!--==============================
 	Footer Area
 ==============================-->
-   
 
     <footer
       class="footer-wrapper footer-layout1"
@@ -1148,12 +1049,15 @@ Testimonial Area
               <div class="widget footer-widget">
                 <div class="th-widget-about">
                   <div class="about-logo">
-                    <a ><img src="assets/img/nlogo5.png" alt="FoodFindr" width="150" height="75"
+                    <a
+                      ><img
+                        src="assets/img/nlogo5.png"
+                        alt="FoodFindr"
+                        width="150"
+                        height="75"
                     /></a>
                   </div>
-                  <p class="about-text">
-                    Thank you for using our services.
-                  </p>
+                  <p class="about-text">Thank you for using our services.</p>
                   <div class="th-social">
                     <a href="https://www.facebook.com/"
                       ><i class="fab fa-facebook-f"></i
@@ -1171,7 +1075,6 @@ Testimonial Area
                 </div>
               </div>
             </div>
-           
 
             <div class="col-md-6 col-xl-auto">
               <div class="widget footer-widget">
@@ -1186,9 +1089,7 @@ Testimonial Area
                     <div class="info-box_icon">
                       <i class="fas fa-location-dot"></i>
                     </div>
-                    <p class="info-box_text">
-                      Ouardia 1, Tunis
-                    </p>
+                    <p class="info-box_text">Ouardia 1, Tunis</p>
                   </div>
                   <div class="info-box">
                     <div class="info-box_icon">
@@ -1205,7 +1106,9 @@ Testimonial Area
                       <i class="fas fa-envelope"></i>
                     </div>
                     <p class="info-box_text">
-                      <a href="mailto:help24/7@foodfindr.com" class="info-box_link"
+                      <a
+                        href="mailto:help24/7@foodfindr.com"
+                        class="info-box_link"
                         >help24/7@foodfindr.com</a
                       >
                     </p>
@@ -1213,7 +1116,6 @@ Testimonial Area
                 </div>
               </div>
             </div>
-          
           </div>
         </div>
       </div>
@@ -1223,11 +1125,9 @@ Testimonial Area
             <div class="col-md-6">
               <p class="copyright-text">
                 Copyright <i class="fal fa-copyright"></i> 2023
-                <a >FoodFindr</a>. All Rights
-                Reserved.
+                <a>FoodFindr</a>. All Rights Reserved.
               </p>
             </div>
-            
           </div>
         </div>
       </div>
