@@ -1282,3 +1282,14 @@ function checkLogin() {
     document.getElementById("buttonuser").hidden = false;
   }
 }
+
+function logout() {
+
+  localStorage.removeItem("CURRENT_USER");
+  alert("Logged out successfulluy !");
+
+  document.getElementById("buttonlogin").hidden = false;
+  document.getElementById("buttonuser").hidden = true;
+  
+  window.location.href = "index.html";
+  }
