@@ -119,11 +119,14 @@ let registerUser = () => {
     .then((response) => response.json())
     .then((data) => {
       console.log("User registered successfully:", data);
+      alert("Registered successfulluy ! Please login now !");
+
       // Optionally, redirect to a success page or update the UI
     })
     .catch((error) => {
       console.error("Error registering user:", error);
-      // Handle errors, show an error message, or redirect to an error page
+      alert("Error registering !");
+      // Handle errors, show an error message
     });
 };
 
@@ -148,7 +151,8 @@ let loginUser = () => {
     })
     .catch((error) => {
       console.error("Error logging in user:", error);
-      // Handle errors, show an error message, or redirect to an error page
+      alert("Error logging in ! Please check your info !");
+      // Handle errors, show an error message
     });
 };
 
