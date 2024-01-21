@@ -1,3 +1,3 @@
-A REST API that shows the restaurant name, rating, price range, number of reviews, and address of restaurants according to different filters and categories. This project is created in the context of the Web Service Course. 
-OVERLEAF REPORT LINK: https://www.overleaf.com/read/vdmtkcrwvxmg#720e9e
-OVERLEAF SLIDES LINK: 
+A REST API that shows the restaurant name, rating, price range, number of reviews, and address of restaurants according to different filters and categories. This project is created in the context of the Web Service Course.  <br>
+OVERLEAF REPORT LINK: https://www.overleaf.com/read/vdmtkcrwvxmg#720e9e  <br>
+OVERLEAF SLIDES LINK:   <br>
