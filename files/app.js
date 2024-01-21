@@ -104,17 +104,17 @@ let showAllOptions = () => {
 };
 
 let registerUser = () => {
-  const username = document.getElementById("username").value;
+  const username = document.getElementById("name").value;
   const email = document.getElementById("email").value;
-  const pword = document.getElementById("pword").value;
+  const password = document.getElementById("password").value;
 
   // Make a POST request to your server
-  fetch("users/register", {
+  fetch("http://localhost:3000/register", {
     method: "POST",
     headers: {
       "Content-Type": "application/json",
     },
-    body: JSON.stringify({ username, email, pword }),
+    body: JSON.stringify({ username, email, password }),
   })
     .then((response) => response.json())
     .then((data) => {
@@ -1290,6 +1290,6 @@ function logout() {
 
   document.getElementById("buttonlogin").hidden = false;
   document.getElementById("buttonuser").hidden = true;
-  
+
   window.location.href = "index.html";
   }
