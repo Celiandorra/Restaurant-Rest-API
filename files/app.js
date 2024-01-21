@@ -86,6 +86,14 @@ let showAllOptions = () => {
               >
             </div>
           </div>
+
+          <div class="product-content">
+          ${el.restaurant_address}
+         </div>
+         <div class="product-content">
+         Delivery? ${el.delivery}
+         </div>
+         
         </div>
       </div>
     </div>
@@ -289,6 +297,14 @@ let showVegetarianOptions = () => {
               >
             </div>
           </div>
+
+          <div class="product-content">
+          ${el.restaurant_address}
+         </div>
+         <div class="product-content">
+         Delivery? ${el.delivery}
+         </div>
+         
         </div>
       </div>
     </div>
@@ -364,6 +380,14 @@ let showHalalOptions = () => {
               >
             </div>
           </div>
+
+          <div class="product-content">
+          ${el.restaurant_address}
+         </div>
+         <div class="product-content">
+         Delivery? ${el.delivery}
+         </div>
+         
         </div>
       </div>
     </div>
@@ -439,6 +463,14 @@ let showGlutenFreeOptions = () => {
               >
             </div>
           </div>
+
+          <div class="product-content">
+          ${el.restaurant_address}
+         </div>
+         <div class="product-content">
+         Delivery? ${el.delivery}
+         </div>
+         
         </div>
       </div>
     </div>
@@ -514,6 +546,14 @@ let showLactoseFreeOptions = () => {
               >
             </div>
           </div>
+
+          <div class="product-content">
+          ${el.restaurant_address}
+         </div>
+         <div class="product-content">
+         Delivery? ${el.delivery}
+         </div>
+         
         </div>
       </div>
     </div>
@@ -589,6 +629,14 @@ let showAsianOptions = () => {
               >
             </div>
           </div>
+
+          <div class="product-content">
+          ${el.restaurant_address}
+         </div>
+         <div class="product-content">
+         Delivery? ${el.delivery}
+         </div>
+         
         </div>
       </div>
     </div>
@@ -665,6 +713,14 @@ let showMediterraneanOptions = () => {
               >
             </div>
           </div>
+
+          <div class="product-content">
+          ${el.restaurant_address}
+         </div>
+         <div class="product-content">
+         Delivery? ${el.delivery}
+         </div>
+         
         </div>
       </div>
     </div>
@@ -740,6 +796,14 @@ let showPalestinianOptions = () => {
               >
             </div>
           </div>
+
+          <div class="product-content">
+          ${el.restaurant_address}
+         </div>
+         <div class="product-content">
+         Delivery? ${el.delivery}
+         </div>
+         
         </div>
       </div>
     </div>
@@ -815,6 +879,14 @@ let showAmericanOptions = () => {
               >
             </div>
           </div>
+
+          <div class="product-content">
+          ${el.restaurant_address}
+         </div>
+         <div class="product-content">
+         Delivery? ${el.delivery}
+         </div>
+         
         </div>
       </div>
     </div>
@@ -890,6 +962,14 @@ let showTunisianOptions = () => {
               >
             </div>
           </div>
+
+          <div class="product-content">
+          ${el.restaurant_address}
+         </div>
+         <div class="product-content">
+         Delivery? ${el.delivery}
+         </div>
+         
         </div>
       </div>
     </div>
@@ -965,6 +1045,14 @@ let showMexicanOptions = () => {
               >
             </div>
           </div>
+
+          <div class="product-content">
+          ${el.restaurant_address}
+         </div>
+         <div class="product-content">
+         Delivery? ${el.delivery}
+         </div>
+         
         </div>
       </div>
     </div>
@@ -1040,6 +1128,14 @@ let showItalianOptions = () => {
               >
             </div>
           </div>
+
+          <div class="product-content">
+          ${el.restaurant_address}
+         </div>
+         <div class="product-content">
+         Delivery? ${el.delivery}
+         </div>
+         
         </div>
       </div>
     </div>
@@ -1114,6 +1210,14 @@ let showSeafoodOptions = () => {
               >
             </div>
           </div>
+
+          <div class="product-content">
+          ${el.restaurant_address}
+         </div>
+         <div class="product-content">
+         Delivery? ${el.delivery}
+         </div>
+         
         </div>
       </div>
     </div>
