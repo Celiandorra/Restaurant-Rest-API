@@ -36,15 +36,39 @@ app.get("/restaurants", async (req, res) => {
   }
 });
 
+// register user
+app.post("/register", async (req, res) => {
+  try {
+    const { username, password, email } = req.body;
+    const result = await pool.query(
+      "INSERT INTO users (username, pword, email) VALUES ($1, $2, $3) RETURNING *",
+      [username, password, email]
+    );
+    res.json(result.rows[0]);
+  } catch (error) {
+    console.error("Error executing query", error);
+    res.status(500).send("Internal Server Error");
+  }
+});
 
-
-
-
-
-
-
-
-
+// login user
+app.post("/login", async (req, res) => {
+  try {
+    const { username, password } = req.body;
+    const result = await pool.query(
+      "SELECT * FROM users WHERE username = $1 AND pword = $2",
+      [username, password]
+    );
+    if (result.rows.length > 0) {
+      res.json(result.rows[0]);
+    } else {
+      res.status(400).send("Invalid Credentials");
+    }
+  } catch (error) {
+    console.error("Error executing query", error);
+    res.status(500).send("Internal Server Error");
+  }
+});
 
 // vegetarian food
 app.get("/restaurants/vegetarian", async (req, res) => {
@@ -62,8 +86,6 @@ app.get("/restaurants/vegetarian", async (req, res) => {
   }
 });
 
-
-
 // vegan food
 app.get("/restaurants/vegan", async (req, res) => {
   try {
@@ -80,8 +102,6 @@ app.get("/restaurants/vegan", async (req, res) => {
   }
 });
 
-
-
 // lactose free food
 app.get("/restaurants/lactosefree", async (req, res) => {
   try {
@@ -97,7 +117,6 @@ app.get("/restaurants/lactosefree", async (req, res) => {
     res.status(500).send("Internal Server Error");
   }
 });
-
 
 // gluten free food
 app.get("/restaurants/glutenfree", async (req, res) => {
@@ -131,7 +150,6 @@ app.get("/restaurants/halal", async (req, res) => {
   }
 });
 
-
 // seafood food
 app.get("/restaurants/seafood", async (req, res) => {
   try {
@@ -148,19 +166,10 @@ app.get("/restaurants/seafood", async (req, res) => {
   }
 });
 
-
-
-
 // Start the Express server
 app.listen(port, () => {
   console.log(`Server is running on port ${port}`);
 });
-
-
-
-
-
-
 
 // asian food
 app.get("/restaurants/asian", async (req, res) => {
@@ -177,7 +186,6 @@ app.get("/restaurants/asian", async (req, res) => {
     res.status(500).send("Internal Server Error");
   }
 });
-
 
 // italian food
 app.get("/restaurants/italian", async (req, res) => {
@@ -227,8 +235,6 @@ app.get("/restaurants/american", async (req, res) => {
   }
 });
 
-
-
 // mexican food
 app.get("/restaurants/mexican", async (req, res) => {
   try {
@@ -244,7 +250,6 @@ app.get("/restaurants/mexican", async (req, res) => {
     res.status(500).send("Internal Server Error");
   }
 });
-
 
 // tunisian food
 app.get("/restaurants/tunisian", async (req, res) => {
@@ -277,6 +282,3 @@ app.get("/restaurants/mediterranean", async (req, res) => {
     res.status(500).send("Internal Server Error");
   }
 });
-
-
-

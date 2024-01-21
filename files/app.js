@@ -1,5 +1,11 @@
 let showAllOptions = () => {
+  //check user
+  checkLogin();
+
+  // posts
   let wrapper = document.getElementById("RestaurantWrapper");
+
+  wrapper.innerHTML = "";
 
   let restoArray = [];
 
@@ -66,6 +72,55 @@ let showAllOptions = () => {
           `;
         wrapper.innerHTML += resto;
       }
+    });
+};
+
+let registerUser = () => {
+  const username = document.getElementById("username").value;
+  const email = document.getElementById("email").value;
+  const pword = document.getElementById("pword").value;
+
+  // Make a POST request to your server
+  fetch("users/register", {
+    method: "POST",
+    headers: {
+      "Content-Type": "application/json",
+    },
+    body: JSON.stringify({ username, email, pword }),
+  })
+    .then((response) => response.json())
+    .then((data) => {
+      console.log("User registered successfully:", data);
+      // Optionally, redirect to a success page or update the UI
+    })
+    .catch((error) => {
+      console.error("Error registering user:", error);
+      // Handle errors, show an error message, or redirect to an error page
+    });
+};
+
+let loginUser = () => {
+  const username = document.getElementById("username").value;
+  const password = document.getElementById("password").value;
+
+  // Make a POST request to your server
+  fetch("http://localhost:3000/login", {
+    method: "POST",
+    headers: {
+      "Content-Type": "application/json",
+    },
+    body: JSON.stringify({ username, password }),
+  })
+    .then((response) => response.json())
+    .then((data) => {
+      console.log("User logged in successfully:", data);
+      localStorage.setItem("CURRENT_USER", username);
+      alert("Logged in successfulluy !");
+      window.location.href = "index.html";
+    })
+    .catch((error) => {
+      console.error("Error logging in user:", error);
+      // Handle errors, show an error message, or redirect to an error page
     });
 };
 
@@ -1050,8 +1105,7 @@ let showSeafoodOptions = () => {
 
 // add favorite restaurants
 function addToFavorites(restaurantId) {
-  // Replace 'your-api-endpoint' with the actual API endpoint URL
-  const apiUrl = "http://localhost:3000/restaurants/favorites";
+  Url = "http://localhost:3000/restaurants/favorites";
 
   // Find the restaurant in the restaurants array by its ID
   const restaurantToAdd = restaurants.find(
@@ -1088,5 +1142,15 @@ function addToFavorites(restaurantId) {
     }
   } else {
     console.log(`Restaurant with ID ${restaurantId} not found.`);
+  }
+}
+
+function checkLogin() {
+  if (localStorage.getItem("CURRENT_USER") == null) {
+    document.getElementById("buttonlogin").hidden = false;
+    document.getElementById("buttonuser").hidden = true;
+  } else {
+    document.getElementById("buttonlogin").hidden = true;
+    document.getElementById("buttonuser").hidden = false;
   }
 }
