@@ -1,3 +1,23 @@
+function changeColor(clickedButtonId) {
+  // Get all buttons with the common classes
+  var buttons = document.querySelectorAll('.th-btn.tab-btn');
+
+  // Loop through all buttons
+  buttons.forEach(function(button) {
+    // Check if the button is the clicked one
+    if (button.id === clickedButtonId) {
+      // Change class to 'th-btn tab-btn active'
+      button.classList.add('active');
+    } else {
+      // Change class to 'th-btn tab-btn' for other buttons
+      button.classList.remove('active');
+    }
+  });
+}
+
+
+
+
 let showAllOptions = () => {
   //check user
   checkLogin();

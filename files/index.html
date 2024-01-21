@@ -622,9 +622,10 @@ About Area
         <div class="filter-menu indicator-active filter-menu-active">
           <button
             data-filter="*"
-            class="th-btn tab-btn active"
+            class="th-btn tab-btn "
             type="button"
-            onclick="showAllOptions()"
+            id="all"
+            onclick="showAllOptions(); changeColor('all')" 
           >
             ALL
           </button>
@@ -632,7 +633,8 @@ About Area
             data-filter=".cat1"
             class="th-btn tab-btn"
             type="button"
-            onclick="showVeganOptions()"
+            id="vegan"
+            onclick="showVeganOptions(); changeColor('vegan')"
           >
             Vegan
           </button>
@@ -640,7 +642,8 @@ About Area
             data-filter=".cat2"
             class="th-btn tab-btn"
             type="button"
-            onclick="showHalalOptions()"
+            id="halal"
+            onclick="showHalalOptions(); changeColor('halal')"
           >
             Halal
           </button>
@@ -648,7 +651,8 @@ About Area
             data-filter=".cat3"
             class="th-btn tab-btn"
             type="button"
-            onclick="showVegetarianOptions()"
+            id="vegetarian"
+            onclick="showVegetarianOptions(); changeColor('vegetarian')"
           >
             Vegetarian
           </button>
@@ -656,7 +660,8 @@ About Area
             data-filter=".cat4"
             class="th-btn tab-btn"
             type="button"
-            onclick="showGlutenFreeOptions()"
+            id="glutenfree"
+            onclick="showGlutenFreeOptions(); changeColor('glutenfree')"
           >
             Gluten Free
           </button>
@@ -664,7 +669,8 @@ About Area
             data-filter=".cat5"
             class="th-btn tab-btn"
             type="button"
-            onclick="showLactoseFreeOptions()"
+            id="lactosefree"
+            onclick="showLactoseFreeOptions(); changeColor('lactosefree')"
           >
             Lactose Free
           </button>
@@ -672,7 +678,8 @@ About Area
             data-filter=".cat5"
             class="th-btn tab-btn"
             type="button"
-            onclick="showSeafoodOptions()"
+            id="seafood"
+            onclick="showSeafoodOptions(); changeColor('seafood')"
           >
             Seafood
           </button>
